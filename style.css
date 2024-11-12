@@ -1,0 +1,155 @@
+/*
+Colors used: https://paletton.com/#uid=34e0u0kjTmp9tyHeDrEoShpuobW
+Background Color: #FFF;
+Primary Color: #47377B;
+Secondary Color: #B2B244;
+Highlight Color: #B28D44;
+*/
+
+body {
+  background-color: #fff;
+  font-family: "Roboto", serif;
+  font-size: medium;
+  font-weight: normal;
+}
+
+/* Recommended font sizes for Google Roboto */
+h1 {
+  font-size: 3rem; /* 48px */
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 2.5rem; /* 40px */
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 2rem; /* 32px */
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.5rem; /* 24px */
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 1.25rem; /* 20px */
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 1rem; /* 16px */
+  font-weight: 500;
+}
+
+h7 {
+  font-size: 0.875rem; /* 14px */
+  font-weight: 500;
+}
+
+button {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem; /* 16px */
+  font-weight: 500;
+  color: #ffffff; /* Text color */
+  background-color: #6200ee; /* Primary color */
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(45, 30, 95, 0.3);
+}
+
+button:hover {
+  background-color: #2d1e5f; /* Darker purple */
+  box-shadow: 0px 6px 12px rgba(23, 10, 65, 0.4);
+}
+
+button:active {
+  background-color: #6200ee; /* Reset to primary */
+  box-shadow: 0px 2px 5px rgba(45, 30, 95, 0.3);
+  transform: translateY(2px);
+}
+
+button:disabled {
+  background-color: #bdbdbd; /* Gray */
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+img {
+  width: 100%;
+}
+
+/* Main header styles */
+header {
+  background-color: #fff; /* White background */
+  padding: 1rem 2rem;
+  color: #47377b; /* Primary dark purple color for text */
+  box-shadow: 0px 4px 10px rgba(71, 55, 123, 0.2); /* Soft shadow with primary color */
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo styling */
+header img {
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+header img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  filter: brightness(1.1); /* Slightly brighter on hover */
+}
+
+/* Navigation styles */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem; /* Space between navigation items */
+}
+
+nav a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #47377b; /* Primary color for links */
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #b2b244; /* Secondary color as background on hover */
+  color: #fff; /* White text on hover */
+}
+
+/* Active/selected link style */
+nav a:active,
+nav a:focus {
+  background-color: #b28d44; /* Highlight color */
+  color: #fff; /* White text on active/focus */
+}
+
+/* Responsive layout for smaller screens */
+@media  {
+  header div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
