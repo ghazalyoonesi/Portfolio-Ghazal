@@ -168,6 +168,31 @@ nav a:focus {
   color: #fff; /* White text on active/focus */
 }
 
+.icon {
+  display: block;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  nav ul {
+    display: none; /* Hide menu items by default */
+    flex-direction: column; /* Stack menu items vertically */
+    position: absolute;
+    top: 60px; /* Position menu below the header */
+    right: 0;
+    background-color: #fff; /* Match background color */
+    box-shadow: 0px 4px 10px rgba(71, 55, 123, 0.2);
+    padding: 1rem;
+    border-radius: 8px;
+    z-index: 1000; /* Ensure it's above other elements */
+  }
+
+  nav ul.show {
+    display: flex; /* Display menu when toggled */
+  }
+}
+
 .container {
   width: 90%;
   margin: 0 auto;
@@ -206,7 +231,6 @@ nav a:focus {
   float: left;
 }
 
-/* Basic footer styling */
 footer#contact {
   background-color: #fff;
   padding: 40px 20px;
@@ -216,14 +240,12 @@ footer#contact {
   border-top: 2px solid #b28d44;
 }
 
-/* Styling for the paragraph text */
 footer#contact p {
   font-size: 1.2em;
   color: #47377b;
   margin-bottom: 20px;
 }
 
-/* Styling for the links list */
 footer#contact ul {
   list-style: none;
   padding: 0;
@@ -233,7 +255,6 @@ footer#contact ul {
   margin-bottom: 20px;
 }
 
-/* Link styling */
 footer#contact ul li a {
   color: #b28d44;
   text-decoration: none;
@@ -358,9 +379,13 @@ footer#contact div {
   }
 }
 
-@media (min-width: 640px) {
+@media (min-width: 641px) {
   header {
     text-align: unset;
+  }
+
+  .icon {
+    display: none;
   }
 
   header div {
