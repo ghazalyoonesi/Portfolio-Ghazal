@@ -78,37 +78,6 @@ body {
   background: #47377b; /* Primary color on hover */
 }
 
-button {
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem; /* 16px */
-  font-weight: 500;
-  color: #ffffff; /* Text color */
-  background-color: #47377b; /* Primary color */
-  padding: 12px 24px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0px 4px 10px rgba(45, 30, 95, 0.3);
-}
-
-button:hover {
-  background-color: #2d1e5f; /* Darker purple */
-  box-shadow: 0px 6px 12px rgba(23, 10, 65, 0.4);
-}
-
-button:active {
-  background-color: #6200ee; /* Reset to primary */
-  box-shadow: 0px 2px 5px rgba(45, 30, 95, 0.3);
-  transform: translateY(2px);
-}
-
-button:disabled {
-  background-color: #bdbdbd; /* Gray */
-  cursor: not-allowed;
-  box-shadow: none;
-}
-
 img {
   width: 100%;
 }
@@ -470,4 +439,26 @@ footer#contact div {
   .hero-btn:hover {
     transform: translateY(-3px);
   }
+}
+
+.welcome-btn {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem; /* 16px */
+  font-weight: 500;
+  display: inline-block;
+  padding: 12px 24px;
+  color: white;
+  background-color: #47377b;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(45, 30, 95, 0.3);
+}
+
+.welcome-btn:hover {
+  background-color: #2d1e5f;
+  box-shadow: 0px 6px 12px rgba(23, 10, 65, 0.4);
 }
